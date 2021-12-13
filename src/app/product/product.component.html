@@ -1,0 +1,11 @@
+<div class="container" *ngIf="products">
+  <h5 >Products!</h5>
+  <ol class="list-group list-group" *ngFor="let product of products">
+    <li class="list-group-item d-flex justify-content-between align-items-start">
+      <div class="ms-2 me-auto">
+        <div class="fw-bold">{{ product.name }}</div>
+        Quantity: {{ product.quantity }}
+      </div>
+    </li>
+  </ol>
+</div>
